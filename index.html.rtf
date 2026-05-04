@@ -1,0 +1,146 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 AppleColorEmoji;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww28600\viewh15280\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Janae | Creative Strategist & UGC</title>\
+    <script src="https://cdn.tailwindcss.com"></script>\
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">\
+    <style>\
+        body \{\
+            font-family: 'Inter', sans-serif;\
+            background-color: #050505;\
+            color: #ffffff;\
+            scroll-behavior: smooth;\
+        \}\
+        .serif \{ font-family: 'Playfair Display', serif; \}\
+        .nav-glass \{\
+            background: rgba(5, 5, 5, 0.8);\
+            backdrop-filter: blur(12px);\
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);\
+        \}\
+        .video-card \{\
+            background: #0f0f0f;\
+            border: 1px solid #222;\
+            transition: all 0.4s ease;\
+        \}\
+        .video-card:hover \{\
+            border-color: #ef4444; \
+            transform: translateY(-5px);\
+        \}\
+        .ai-glow \{\
+            box-shadow: 0 0 20px rgba(239, 68, 68, 0.1);\
+            border: 1px solid rgba(239, 68, 68, 0.2);\
+        \}\
+        .loader \{\
+            border: 2px solid rgba(255,255,255,0.1);\
+            border-top: 2px solid #ef4444;\
+            border-radius: 50%;\
+            width: 18px;\
+            height: 18px;\
+            animation: spin 0.8s linear infinite;\
+        \}\
+        @keyframes spin \{ 0% \{ transform: rotate(0deg); \} 100% \{ transform: rotate(360deg); \} \}\
+    </style>\
+</head>\
+<body class="antialiased">\
+\
+    <!-- Nav -->\
+    <nav class="fixed top-0 w-full z-50 nav-glass">\
+        <div class="flex justify-between items-center p-5 max-w-6xl mx-auto">\
+            <div class="text-xl font-bold tracking-tighter">JANAE.</div>\
+            <a href="mailto:hello@janae.com" class="text-[10px] font-bold uppercase tracking-widest px-5 py-2 bg-white text-black rounded-full">Contact</a>\
+        </div>\
+    </nav>\
+\
+    <!-- Hero -->\
+    <header class="max-w-4xl mx-auto text-center pt-40 pb-20 px-6">\
+        <h1 class="text-6xl md:text-8xl font-bold mb-6 italic serif tracking-tight">High-End UGC Strategy.</h1>\
+        <p class="text-gray-400 text-lg max-w-xl mx-auto font-light">\
+            Merging the power of <span class="text-white">Gemini AI</span> with cinematic <span class="text-white">DJI Action 4</span> production to create ads that actually convert.\
+        </p>\
+    </header>\
+\
+    <!-- AI Tool -->\
+    <section class="max-w-3xl mx-auto px-6 py-10">\
+        <div class="ai-glow p-8 rounded-3xl bg-black">\
+            <h2 class="text-xl font-bold mb-4 flex items-center gap-2">\
+                <span class="text-red-500 text-2xl">
+\f1 \uc0\u9889 
+\f0 </span> Instant Ad Strategist\
+            </h2>\
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">\
+                <input id="brand" type="text" placeholder="Brand Name" class="bg-white/5 border border-white/10 p-3 rounded-xl text-sm outline-none focus:border-red-500">\
+                <input id="feat" type="text" placeholder="Key Feature" class="bg-white/5 border border-white/10 p-3 rounded-xl text-sm outline-none focus:border-red-500">\
+            </div>\
+            <button onclick="getStrategy()" id="btn" class="w-full bg-red-500 py-3 rounded-xl font-bold text-sm hover:bg-red-600 transition">Generate Strategy</button>\
+            <div id="output" class="hidden mt-6 text-sm text-gray-400 leading-relaxed border-t border-white/10 pt-4"></div>\
+        </div>\
+    </section>\
+\
+    <!-- Work -->\
+    <section class="max-w-6xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">\
+        <div class="video-card p-4 rounded-2xl text-center">\
+            <div class="aspect-[9/16] bg-neutral-900 rounded-xl mb-4 flex items-center justify-center text-xs text-gray-600 italic">YouTube Search Reveal</div>\
+            <h4 class="font-bold">DIY Narrative</h4>\
+        </div>\
+        <div class="video-card p-4 rounded-2xl text-center">\
+            <div class="aspect-[9/16] bg-neutral-900 rounded-xl mb-4 flex items-center justify-center text-xs text-gray-600 italic">DJI Hardware Tech</div>\
+            <h4 class="font-bold">Tech Spec</h4>\
+        </div>\
+        <div class="video-card p-4 rounded-2xl text-center">\
+            <div class="aspect-[9/16] bg-neutral-900 rounded-xl mb-4 flex items-center justify-center text-xs text-gray-600 italic">Zillow App Story</div>\
+            <h4 class="font-bold">SaaS Lifestyle</h4>\
+        </div>\
+        <div class="video-card p-4 rounded-2xl text-center">\
+            <div class="aspect-[9/16] bg-neutral-900 rounded-xl mb-4 flex items-center justify-center text-xs text-gray-600 italic">Hair Care Montage</div>\
+            <h4 class="font-bold">Aesthetic Beauty</h4>\
+        </div>\
+    </section>\
+\
+    <footer class="text-center py-20 opacity-40 text-xs tracking-widest">\
+        &copy; 2024 JANAE STUDIO \'95 CREATIVE STRATEGIST\
+    </footer>\
+\
+    <script>\
+        const apiKey = "";\
+        async function getStrategy() \{\
+            const b = document.getElementById('brand').value;\
+            const f = document.getElementById('feat').value;\
+            const btn = document.getElementById('btn');\
+            const out = document.getElementById('output');\
+            if(!b || !f) return;\
+            \
+            btn.disabled = true;\
+            btn.innerHTML = '<div class="flex justify-center"><div class="loader"></div></div>';\
+            out.classList.remove('hidden');\
+            out.innerHTML = "Consulting AI Creative Director...";\
+\
+            try \{\
+                const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=$\{apiKey\}`, \{\
+                    method: 'POST',\
+                    headers: \{'Content-Type': 'application/json'\},\
+                    body: JSON.stringify(\{\
+                        contents: [\{parts: [\{text: `UGC strategy for $\{b\} - $\{f\}. 1 hook, 1 script outline.`\}]\}],\
+                        systemInstruction: \{parts: [\{text: "Be professional, brief, and conversion-focused."\}]\}\
+                    \})\
+                \});\
+                const d = await res.json();\
+                out.innerHTML = d.candidates[0].content.parts[0].text.replace(/\\n/g, '<br>');\
+            \} catch (e) \{\
+                out.innerHTML = "Connection error. Try again.";\
+            \} finally \{\
+                btn.disabled = false;\
+                btn.innerHTML = "Generate Strategy";\
+            \}\
+        \}\
+    </script>\
+</body>\
+</html>}
